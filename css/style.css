@@ -1,32 +1,39 @@
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.header-grid-container {
+body{
+  font-family: 'Helvetica', sans-serif;
+}
+
+.header-grid-container{
   display: grid;
   grid-template-rows: 15vh;
   border-top: 4px solid #ed5900;
-  border-bottom: 1px solid black;
 }
 .header-flex-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-flex-container .logotype {
+.header-flex-container .logotype{
+  margin-left: 15vw;
   width: auto;
-  max-width: 277px;
+  max-width: 215px;
   height: auto;
-  max-height: 39px;
+  max-height: 29px;
 }
 
-.header-flex-container .social-icons {
+.header-flex-container .social-icons{
+  margin-top: 3vh;
+  align-self: flex-start;
   display: flex;
+  margin-right: 15vw;
 }
 
-.social-icons li {
+.social-icons li{
   list-style: none;
   padding: 0.2rem;
 }
@@ -41,10 +48,170 @@
   background-position: center;
 }
 
-.footer-container {
+
+
+.wrapper{
+  display: flex;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-top: 7vh;
+}
+.wrapper a {
+  color: #ed5900;
+}
+.main-section{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  max-width: 50vw;
+}
+.ebook{
+  margin-top: -15vh;
+  margin-left: 0.5vw;
+  max-width: 17vw;
+  z-index: 1;
+}
+.main-section .titles{
+  margin-bottom: 5vh;
+  max-width: 27vw;
+}
+.main-section h1 {
+  color: #ed5900;
+  padding-bottom: 3rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.main-section .titles hr {
+  border-color: rgba(228, 228, 228, 0.096);
+  width: 46vw;
+}
+.main-section h2{
+  color: #b1b1b1;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+.main-section p{
+  font-size: 10.9px;
+  padding-right: 2.5rem;
+  line-height: 1.2rem;
+  color: #4e4e50;
+  font-weight: 500;
+}
+.main-section .emphasizes{
+  margin: auto;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ed5900;
+  font-size: 12px;
+}
+
+.wrapper aside{
+  background-color: #ecececce;
+  padding: 0 2vw;
+  height: 100%;
+}
+
+.wrapper aside a{
+  text-decoration: none;
+}
+
+.wrapper aside form{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper aside form #ebook-download{
+  color: white;
+  border: none;
+  background-color: #ed5900;
+  text-transform: uppercase;
+  padding: 1.4vh;
+  width: 100%;
+}
+
+.wrapper aside form h3{
+  color: #ed5900;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1vh;
+}
+.wrapper aside .ebook-fields{
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.wrapper aside .ebook-fields input{
+  border: 1px solid rgba(156, 156, 156, 0.384);
+  margin-top: 0.8rem;
+  width: 16vw;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 2px;
+}
+.wrapper aside .ebook-fields input::placeholder{
+  color: rgba(182, 182, 182, 0.616);
+  font-size: 0.8rem;
+}
+.wrapper aside .ebook-checkboxes{
+  border: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+.wrapper aside .ebook-checkboxes label{
+  font-size: 0.7rem;
+  font-size: 11px;
+  margin-top: 1vh;
+  color: rgba(54, 54, 54, 0.849);
+}
+.wrapper aside .ebook-checkboxes label input{
+  appearance: none;
+  border: 1px solid rgba(141, 141, 141, 0.308);
+  border-radius: 2px;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+}
+.wrapper aside .ebook-checkboxes label input:checked{
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+}
+
+.footer-container{
   display: grid;
   grid-template-rows: 17vh;
   border: 1px solid black;
+  background-color: #4f4f51;
+  color: white;
+}
+.footer-container li{
+  list-style: none;
+}
+
+.footer-container a{
+  text-decoration: none;
+  color: white;
+}
+.footer-container a:hover{
+  text-decoration: underline;
+}
+
+.footer-frame{
+  display: flex;
+  align-items: center;
+}
+.footer-frame img{
+  align-self: center;
 }
 
 .popup{

@@ -38,12 +38,15 @@
   </div>
   <!-- Container -->
   <div class="wrapper">
-    <section>
+    <section class='main-section'>
+      <!-- Titles -->
+      <div class="titles">
+        <h1>Lorem ipsum dolor sit amet elit consectetur adipiscing eu ipsum  porttitor ligula donec</h1>
+        <hr>
+        <h2>Lorem ipsum dolor sit amet consectetur adipiscing elit eu porttitor ligula donec</h2>
+      </div>
       <!-- Ebook -->
       <img src="img/ebook.png" class="ebook" alt="E-book genérico de InboundCycle">
-      <!-- Titles -->
-      <h1>Lorem ipsum dolor sit amet elit consectetur adipiscing eu ipsum  porttitor ligula donec</h1>
-      <h2>Lorem ipsum dolor sit amet consectetur adipiscing elit eu porttitor ligula donec</h2>
       <!-- Body text -->
       <p>Duis blandit tempor facilisis. Curabitur ipsum turpis, <a href="#" title="Enlace de prueba">venenatis</a> et massa id, congue dignissim nibh. Praesent vitae justo vel metus faucibus vehicula. Donec vitae semper eros, et viverra leo. Quisque maximus semper mi, sit amet vehicula quam ultricies eu. Nullam euismod orci sed erat blandit vulputate nec vitae arcu. Integer nec imperdiet sem. Nullam a nibh rhoncus, tincidunt arcu eu, porta erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae semper eros, et viverra leo.</p>
       <!-- Emphasizes -->
@@ -56,16 +59,16 @@
       <!-- Download form -->
       <form action="post">
         <h3>Descargar e-book gratis</h3>
-        <fieldset>
+        <fieldset class="ebook-fields">
           <input type="text" name="name" placeholder="Nombre">
           <input type="text" name="surname" placeholder="Apellidos">
           <input type="email" name="email"  placeholder="Email">
         </fieldset>
-        <fieldset>
-          <label><input type="checkbox" name="legal"> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
+        <fieldset class="ebook-checkboxes">
+          <label><input type="checkbox" name="legal" required="true"> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
           <label><input type="checkbox" name="subscription"> Suscríbeme al blog</label>
         </fieldset>
-        <button type="submit">Descargar</button>
+        <button type="submit" id="ebook-download">Descargar</button>
       </form>
     </aside>
   </div>
