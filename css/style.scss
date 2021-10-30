@@ -1,0 +1,63 @@
+$primaryColor: #ed5900;
+$widerMargin: 15vw;
+$smallMargin: 5vw;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+@import './header.scss';
+
+.separator-image{
+  height: 16vh;
+  background-image: linear-gradient(#f7f7f76c, #f7f7f76c), url('/img/separator-image.jpg');
+  background-size: 100vw;
+  background-position: center;
+}
+
+.wrapper{
+  display: flex;
+  margin-left: $widerMargin;
+  margin-right: $widerMargin;
+  margin-top: 6vh;
+  a {
+    color: $primaryColor;
+  }
+}
+
+@import './mainSection.scss';
+
+@import './ebookForm.scss';
+
+@import './footer.scss';
+
+
+@media (max-width: 425px){
+  .wrapper{
+    flex-direction: column;
+    margin: 0 5vw 0 5vw;
+  }
+  .main-section{
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .main-section .titles{
+    margin-top: 5vh;
+    max-width: 100%;
+  }
+}
+
+// @media (min-width: 426px) and (max-width: 915px){
+//   .wrapper{
+//     flex-direction: column;
+//   }
+//   .main-section{
+//     flex-direction: column;
+//   }
+// }

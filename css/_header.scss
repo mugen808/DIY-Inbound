@@ -1,0 +1,34 @@
+.header-grid-container{
+  display: grid;
+  grid-template-rows: 15vh;
+  border-top: 4px solid $primaryColor;
+}
+.header-flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logotype{
+    margin-left: $widerMargin;
+    width: auto;
+    max-width: 215px;
+    height: auto;
+    max-height: 29px;
+  }
+
+  .social-icons{
+    margin-top: 3vh;
+    align-self: flex-start;
+    display: flex;
+    margin-right: $widerMargin;
+
+    li{
+      list-style: none;
+      padding: 0.2rem;
+    }
+
+    a{
+      color: $primaryColor;
+    }
+  }
+}

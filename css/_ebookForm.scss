@@ -1,0 +1,76 @@
+.wrapper aside{
+  background-color: #ecececce;
+  padding: 0 2vw;
+  height: 100%;
+  a{
+    text-decoration: none;
+  }
+  form{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #ebook-download{
+      color: white;
+      border: none;
+      background-color: $primaryColor;
+      text-transform: uppercase;
+      padding: 1.5vh 1.4vh;
+      width: 100%;
+      cursor: pointer;
+      font-weight: bolder;
+      letter-spacing: 0.3px;
+    }
+    h3{
+      color: $primaryColor;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 1vh;
+    }
+    .ebook-fields{
+      display: flex;
+      flex-direction: column;
+      border: none;
+      input{
+        border: 1px solid rgba(156, 156, 156, 0.384);
+        margin-top: 0.8rem;
+        width: 16vw;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        border-radius: 2px;
+        &::placeholder{
+          color: rgba(182, 182, 182, 0.616);
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .ebook-checkboxes{
+      border: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2vh;
+      margin-bottom: 3vh;
+      label{
+        font-size: 0.7rem;
+        font-size: 11px;
+        margin-top: 1vh;
+        color: rgba(54, 54, 54, 0.849);
+        input{
+          appearance: none;
+          border: 1px solid rgba(141, 141, 141, 0.308);
+          border-radius: 2px;
+          background-color: white;
+          width: 10px;
+          height: 10px;
+          &:checked{
+            -webkit-appearance: auto;
+            -moz-appearance: auto;
+          }
+        }
+      }
+    }
+  }
+}
