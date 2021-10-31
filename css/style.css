@@ -336,6 +336,10 @@ body {
   display: flex;
 }
 
+.footer-container .footer-frame ul a {
+  font-size: 0.6rem;
+}
+
 .footer-container .footer-frame .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,6 +350,38 @@ body {
 }
 
 @media (max-width: 425px) {
+  .wrapper aside form #ebook-download {
+    width: 80vw;
+  }
+  .wrapper aside form .ebook-fields input {
+    width: 80vw;
+  }
+  .wrapper aside form .ebook-checkboxes {
+    width: 80vw;
+  }
+  .header-flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-flex-container .social-icons {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .header-flex-container .social-icons li {
+    padding: 0.5rem;
+  }
+  .header-flex-container .logotype, .header-flex-container .social-icons {
+    margin: 0;
+  }
   .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -363,6 +399,40 @@ body {
   .main-section .titles {
     margin-top: 5vh;
     max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .main-section p {
+    text-align: center;
+    padding: 5vh 0;
+  }
+  .main-section .ebook {
+    margin: 0;
+    max-width: 50vw;
+  }
+  .main-section .emphasizes {
+    margin-top: 2vh;
+    text-align: center;
+  }
+  .footer-container .footer-frame {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .footer-container .footer-frame img {
+    max-width: 90px;
+    max-height: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

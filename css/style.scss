@@ -37,21 +37,7 @@ body{
 
 @import './footer.scss';
 
-
-@media (max-width: 425px){
-  .wrapper{
-    flex-direction: column;
-    margin: 0 5vw 0 5vw;
-  }
-  .main-section{
-    flex-direction: column;
-    max-width: 100%;
-  }
-  .main-section .titles{
-    margin-top: 5vh;
-    max-width: 100%;
-  }
-}
+@import './media-queries/smallScreen.scss'
 
 // @media (min-width: 426px) and (max-width: 915px){
 //   .wrapper{
