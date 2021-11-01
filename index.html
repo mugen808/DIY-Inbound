@@ -65,7 +65,7 @@
           <input type="email" name="email"  placeholder="Email">
         </fieldset>
         <fieldset class="ebook-checkboxes">
-          <label><input type="checkbox" name="legal" required="true"> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
+          <label><input type="checkbox" name="legal" required="true" id="terms-conditions-box"> Acepto la <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>*</label>
           <label><input type="checkbox" name="subscription"> Suscríbeme al blog</label>
         </fieldset>
         <button type="submit" id="ebook-download">Descargar</button>
@@ -93,10 +93,13 @@
     </div>
   </footer>
   <!-- Pop-up -->
-  <div class="popup" style="display: none;">
+  <div class="popup">
     <div class="caption">
-      <i class="fa fa-times"></i>
+      <div class="close-button">
+        <i class="fa fa-times" id="close-modal"></i>
+      </div>
       <p>¡Muchas gracias!</p>
     </div>
   </div>
+  <script src="./js/ebookModal.js"></script>
 </body>

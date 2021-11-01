@@ -1,0 +1,67 @@
+
+@media (min-width: 1024px) and (max-width: 1232px){
+  $largeMargin: 8vw;
+  $formWidth: 25vw;
+  .wrapper{
+    margin: 5vh $largeMargin 0 $largeMargin;
+    justify-content: space-between;
+  }
+  .wrapper aside{
+    height: 46vh;
+    form{
+      #ebook-download{
+        margin-top: 1.2vh;
+        width: $formWidth;
+      }
+      .ebook-fields{
+        input{
+          margin-top: 1.7vh;
+          width: $formWidth;
+          padding-top: 1.3vh;
+          padding-bottom: 1.3vh;
+        }
+      }
+      .ebook-checkboxes{
+        width: $formWidth;
+        label{
+          padding-top: 0.5vh;
+          &:last-child{
+            padding-top: 1vh;
+          }
+        }
+      }
+    }
+  }
+  .header-flex-container{
+    .logotype{
+      margin-left: $largeMargin;
+    }
+    .social-icons{
+      margin-right: $largeMargin;
+    }
+  }
+  .main-section{
+    max-width: 100%;
+
+    .ebook{
+      max-width: 23vw;
+    }
+    .emphasizes{
+      margin-top: 5vh;
+    }
+  }
+  .footer-container{
+    .footer-frame{
+      margin-left: $largeMargin;
+      margin-right: $largeMargin;
+    }
+  }
+  .caption{
+    .close-button{
+      height: 5vh;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+  }
+}

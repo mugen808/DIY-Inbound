@@ -1,0 +1,35 @@
+.popup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.caption{
+  position: absolute;
+  top: 25vh;
+  width: 50vw;
+  height: 20vh;
+  border: 1px solid rgba(0, 0, 0, 0.295);
+  background-color: white;
+  z-index: 2;
+  border-radius: 2%;
+  box-shadow: 40px 40px 30px rgba(0, 0, 0, 0.404), -20px -20px 30px rgba(0, 0, 0, 0.404);
+  .close-button{
+    width: 100%;
+    height: 4vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+    text-align: end;
+    padding: 1vh 1vw 1vh;
+    background-color: rgba(128, 128, 128, 0.13);
+    i{
+      cursor: pointer;
+    }
+  }
+  p{
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.747);
+  }
+}

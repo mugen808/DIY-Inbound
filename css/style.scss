@@ -37,13 +37,6 @@ body{
 
 @import './footer.scss';
 
-@import './media-queries/smallScreen.scss'
+@import './modal.scss';
 
-// @media (min-width: 426px) and (max-width: 915px){
-//   .wrapper{
-//     flex-direction: column;
-//   }
-//   .main-section{
-//     flex-direction: column;
-//   }
-// }
+@import './media-queries/mediaQueries.scss';
